@@ -16,3 +16,22 @@ img {
   display: block;
   max-width: 100%;
 }
+/* ДЗ 9.02. */
+  .timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .field {
+    margin: 0.5em;
+    text-align: center;
+  }
+  .label {
+    display: block;
+    font-size: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    margin-top: 0.5em;
+  }

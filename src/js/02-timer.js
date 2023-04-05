@@ -19,7 +19,7 @@ flatpickr('#datetime-picker', {
         const selectedDate = selectedDates[0];
         const now = new Date();
         if (selectedDate < now) {
-            window.alert(`Please choose a date in the future`);
+        window.alert(`Please choose a date in the future`);
             startButton.setAttribute('disabled', true);
         } else {
             startButton.removeAttribute(`disabled`);

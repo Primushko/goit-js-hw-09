@@ -15,7 +15,7 @@ function handleSubmit(event) {
   const amount = parseInt(amountInput.value);
 
   if (!delayInput.checkValidity() || !stepInput.checkValidity() || !amountInput.checkValidity()) {
-    Notiflix.Notify.failure('Please fill in all fields correctly');
+    Notiflix.Notify.failure('Будь ласка, заповніть усі поля');
     return;
   }
   for (let i = 1; i <= amount; i++) {
@@ -25,12 +25,12 @@ function handleSubmit(event) {
     promise.then(
       result =>
         Notiflix.Notify.success(
-          `Promise ${result.position} resolved after ${result.delay} ms`
+          `Promise ${result.position} Fulfilled ${result.delay} ms`
         ),
       error =>
         Notiflix.Notify.failure(
-          `Promise ${error.position} rejected after ${error.delay} ms`
-        )      
+          `Promise ${error.position} Rejected ${error.delay} ms`
+        )
     );
   }
 }

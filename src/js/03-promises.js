@@ -25,11 +25,11 @@ function handleSubmit(event) {
     promise.then(
       result =>
         Notiflix.Notify.success(
-          `Promise ${result.position} Fulfilled ${result.delay} ms`
+          `Fulfilled Promise ${result.position} ${result.delay} ms`
         ),
       error =>
         Notiflix.Notify.failure(
-          `Promise ${error.position} Rejected ${error.delay} ms`
+          `Rejected Promise ${error.position} ${error.delay} ms`
         )
     );
   }
